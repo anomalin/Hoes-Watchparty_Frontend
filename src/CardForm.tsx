@@ -15,7 +15,7 @@ export default function CardForm({ onAdd }: CardFormProps) {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const res = await fetch("https://hoes-watchparty-backend.onrender.com", {
+        const res = await fetch("https://hoes-watchparty-backend.onrender.com/api/cards", {
             method: "POST",
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify({name, message}),

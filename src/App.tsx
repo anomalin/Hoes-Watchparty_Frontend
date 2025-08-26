@@ -17,7 +17,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("https://hoes-watchparty-backend.onrender.com")
+    fetch("https://hoes-watchparty-backend.onrender.com/api/cards")
     .then(res => res.json())
     .then((data: Card[]) => setCards(data));
   }, []);
