@@ -78,3 +78,7 @@ form {
 a {
   color: #213547;
 }
+
+.main {
+  max-width: 600px;
+}

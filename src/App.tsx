@@ -27,12 +27,12 @@ function App() {
   const addCard = (newCard: Card) => setCards(prev => [...prev, newCard]);
 
   return (
-    <>
+    <div className="main">
       <h1>HOES WATCHPARTY</h1>
       <CardForm onAdd={addCard}/>
       <CardList cards={cards} onDelete={deleteCard}/>
       <Footer></Footer>
-    </>
+    </div>
   );
 }
 
