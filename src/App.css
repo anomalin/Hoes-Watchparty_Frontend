@@ -82,3 +82,8 @@ a {
 .main {
   max-width: 800px;
 }
+
+.lastrow {
+  display: flex;
+  justify-content: space-between;
+}
