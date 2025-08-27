@@ -9,7 +9,7 @@ interface CardProps {
 
 export default function Card({ card, onDelete }: CardProps) {
     const handleDelete = async () => {
-        const res = await fetch(`http://hoes-watchparty-backend.onrender.com/api/cards/${card.id}`, {
+        const res = await fetch(`https://hoes-watchparty-backend.onrender.com/api/cards/${card.id}`, {
             method: "DELETE",
         });
         if (res.ok) {
