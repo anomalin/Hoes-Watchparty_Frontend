@@ -61,3 +61,8 @@ form {
 .publish img {
   height: 1.1rem;
 }
+
+.check {
+  display: flex;
+  justify-content: left;
+}
