@@ -8,6 +8,8 @@ export interface Card {
   id: number;
   name: string;
   message: string;
+  link?: string | null;
+  isWatched: boolean;
 }
 
 function App() {
