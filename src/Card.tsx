@@ -32,9 +32,7 @@ export default function Card({ card, onDelete }: CardProps) {
 
     return (
         <div
-            className={`onecard p-4 rounded shadow-md transition ${isWatched ? "bg-gray-200 opacity-70 line-through" : "bg-white"
-                }`}
-        >
+            className={`onecard ${isWatched ? "watched" : "" }`}>
             <button className="delete-button" onClick={handleDelete}><img src={close} alt="close" /></button>
             <p className="message">{card.message}</p>
             {card.link && (<p className="link"><a href={card.link} target="_blank" rel="noopener noreferrer">{card.link}</a></p>)}

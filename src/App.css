@@ -35,6 +35,11 @@ form {
   background-color: #e37287;
 }
 
+.onecard.watched {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
 .message {
   padding: 0.5rem;
 }
